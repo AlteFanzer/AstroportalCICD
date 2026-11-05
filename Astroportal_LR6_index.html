@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Астропортал — понятные материалы о космосе, планетах и космических миссиях.">
+<title>Астропортал — исследуй космос</title>
+<meta property="og:title" content="Астропортал — исследуй космос">
+<meta property="og:description" content="Астропортал — понятные материалы о космосе, планетах и космических миссиях.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Астропортал">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav"><a class="brand" href="#home">✦ <span>Астро</span>портал</a><button class="menu-toggle" aria-expanded="false" aria-controls="nav-links">Меню ☰</button><nav class="nav-links" id="nav-links"><a href="#about">О проекте</a><a href="#discover">Что изучаем</a><a href="#planets">Планеты</a><a href="#facts">Факты</a><a href="#contact">Контакты</a></nav></div></header>
+<main>
+<section class="hero" id="home"><div class="container hero-grid"><div><div class="eyebrow">Твоя точка входа во Вселенную</div><h1>Космос ближе,<br>чем <em>кажется.</em></h1><p class="lead">Исследуй планеты, далёкие галактики и удивительные космические миссии. Коротко, наглядно и без сложных терминов.</p><div class="actions"><a class="btn btn-primary" href="#discover">Начать исследование ↗</a><a class="btn btn-secondary" href="#about">О проекте</a></div></div><div class="orbit-card" aria-label="Стилизованная иллюстрация планеты"><span class="star s1">✦</span><span class="star s2">✧</span><span class="star s3">✦</span><div class="planet"></div><div class="moon"></div></div></div></section>
+<section id="about"><div class="container"><div class="section-heading"><div class="eyebrow">О проекте</div><h2>Вселенная для любознательных</h2><p>«Астропортал» — учебный информационный лендинг для тех, кто хочет лучше понимать устройство космоса и следить за развитием космонавтики.</p></div><div class="cards"><article class="card"><div class="icon">🔭</div><h3>Понятно</h3><p>Объясняем сложные явления простыми словами и небольшими блоками.</p></article><article class="card"><div class="icon">🪐</div><h3>Наглядно</h3><p>Карточки и короткие факты помогают быстро находить интересующую тему.</p></article><article class="card"><div class="icon">🚀</div><h3>Любознательно</h3><p>Подсказываем, с чего начать знакомство с планетами и космическими миссиями.</p></article></div></div></section>
+<section class="feature-band" id="discover"><div class="container"><div class="section-heading"><div class="eyebrow">Направления</div><h2>Что можно открыть</h2><p>Выбери направление и начни знакомство с космическими объектами и исследованиями.</p></div><div class="cards"><article class="card"><div class="icon">🌌</div><h3>Галактики</h3><p>Как устроены огромные системы звёзд, газа, пыли и тёмной материи.</p></article><article class="card"><div class="icon">🛰️</div><h3>Космические миссии</h3><p>Спутники, орбитальные станции и автоматические аппараты для исследования Вселенной.</p></article><article class="card"><div class="icon">☄️</div><h3>Космические явления</h3><p>Метеоры, кометы, затмения и другие события, которые можно наблюдать.</p></article></div></div></section>
+<section id="planets"><div class="container"><div class="section-heading"><div class="eyebrow">Солнечная система</div><h2>Три мира — три истории</h2><p>Небольшая подборка для первого знакомства с соседями Земли.</p></div><img class="planets-img" src="images/Планеты Солнечной системы.jpg" alt="Фотография планет Солнечной системы"><div class="planet-list"><article class="planet-item"><div class="planet-art">🌍</div><div><h3>Земля</h3><p>Наш дом и единственная известная планета, на которой существует жизнь.</p></div></article><article class="planet-item"><div class="planet-art">🔴</div><div><h3>Марс</h3><p>Холодный мир с вулканами, каньонами и следами древней воды.</p></div></article><article class="planet-item"><div class="planet-art">🪐</div><div><h3>Сатурн</h3><p>Газовый гигант, известный своей впечатляющей системой колец.</p></div></article></div></div></section>
+<section class="feature-band" id="facts"><div class="container"><div class="section-heading"><div class="eyebrow">Космос в цифрах</div><h2>Масштабы, которые впечатляют</h2><p>Несколько ориентиров, помогающих представить размеры Солнечной системы.</p></div><div class="fact-grid"><div class="fact"><strong>8</strong><span>планет в Солнечной системе</span></div><div class="fact"><strong>1</strong><span>астрономическая единица — среднее расстояние Земля—Солнце</span></div><div class="fact"><strong>~8 мин</strong><span>свет идёт от Солнца до Земли</span></div></div></div></section>
+<section id="contact"><div class="container"><div class="cta"><div><h2>Продолжай исследовать</h2><p>Сохрани страницу и возвращайся к новым вопросам о Вселенной.</p></div><a class="btn btn-primary" href="#home">Наверх ↑</a></div></div></section>
+</main><footer class="site-footer"><div class="container footer-inner"><span>© 2026 Астропортал · Учебный проект</span><span>Учебный проект: astro@example.edu</span><span>Телефон для связи: +7 800 123-90-80</span><span>Создано с использованием инструментов ИИ</span></div></footer>
+<script>
+const menuButton=document.querySelector('.menu-toggle');
+const navLinks=document.querySelector('.nav-links');
+menuButton.addEventListener('click',()=>{const opened=navLinks.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(opened));});
+navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}));
+</script>
+</body></html>
