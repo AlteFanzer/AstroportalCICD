@@ -1,2 +1,0 @@
-# AstroportalCICD
-Lab 6
