@@ -29,15 +29,33 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      # Get project files from the repository
       - name: Checkout
         uses: actions/checkout@v4
+
+      # Prepare Node.js environment for HTML and CSS checks
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # Check HTML markup using HTMLHint
+      - name: Check HTML with HTMLHint
+        run: npx --yes htmlhint@1.9.2 index.html
+
+      # Check CSS styles using Stylelint
+      - name: Check CSS with Stylelint
+        run: npx --yes stylelint@17.16.0 style.css --config stylelint.config.mjs
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
           path: '.'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
